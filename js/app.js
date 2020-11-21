@@ -37,17 +37,17 @@ window.onload = function() {
         let timeStamp = document.querySelector('.time-stamp');
         if(hour >=4 && hour < 12) {
             timeStamp.innerHTML = "Good Morning";
-            container.style.backgroundImage = "url('../images/morning.jpg')";
+            container.style.backgroundImage = "url('images/morning.jpg')";
         } else if(hour >= 12 && hour < 17) {
             timeStamp.innerHTML = "Good Afternoon";
-            container.style.backgroundImage = "url('../images/afternoon.jpg')";
+            container.style.backgroundImage = "url('images/afternoon.jpg')";
         } else if(hour >= 17 && hour < 20) {
             timeStamp.innerHTML = "Good Evening";
-            container.style.backgroundImage = "url('../images/evening.jpg')";
+            container.style.backgroundImage = "url('images/evening.jpg')";
 
         } else {
             timeStamp.innerHTML = "Good Night";
-            container.style.backgroundImage = "url('../images/night.jpg')";
+            container.style.backgroundImage = "url('images/night.jpg')";
         }
     };
     setInterval(showDate, 300);
